@@ -1,0 +1,53 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.scss" />
+    <title>SpeechBot</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="left-side">
+        <img
+          class="hero-image"
+          src="./assets/hero-image-text-to-speech.png"
+          alt=""
+        />
+      </section>
+      <section class="right-side">
+        <div class="header">
+          <p class="name">Speechebot</p>
+          <img class="logo" src="./assets/text-to-speech-logo.svg" alt="logo" />
+        </div>
+        <div class="main">
+          <div class="inputField">
+            <textarea class="area" placeholder="Enter your text"></textarea>
+            <p class="description">
+              Enter your text above and hit 'play.' You can choose a different
+              voice by selecting an option from the dropdown menu.
+            </p>
+          </div>
+          <div class="setting">
+            <h4 class="title">Setting</h4>
+            <div class="voice">
+              <span class="voice-item name">Voice</span>
+              <select class="voice-item select language"></select>
+              <select class="voice-item select person"></select>
+            </div>
+            <div class="speed">
+              <span class="name">Speed</span>
+              <div class="number">
+                <span>0.5x</span>
+                <span>0.75x</span>
+                <span>1x</span>
+                <span>1.5x</span>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Text to Speech</button>
+        </div>
+      </section>
+    </div>
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
